@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  height: 100vh;
+  padding: 20px;
+  padding: 20px;
+}
+
+#home {
+  background-color: #f8f9fa;
+  padding-top: 5vh;
+}
+
+#about {
+  background-color: #e9ecef;
+  padding-top: 5vh;
+}
+
+#contact {
+  background-color: #dee2e6;
+  padding-top: 5vh;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  color: #305f7d;
+}
+
+#homeContainer {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  padding-top: 30vh;
+}
+
+#homeName {
+  margin: 0;
+  font-size: 2em;
+}
+
+// HIDE SCROLL GUIDE
+::-webkit-scrollbar {
+  display: none;
+}
