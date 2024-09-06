@@ -16,13 +16,13 @@
 <body>
     <div class="navbar">
         <button onclick="scrollToSection('home')">HOME</button>
-        <button onclick="scrollToSection('about')">WORKS</button>
+        <button onclick="scrollToSection('works')">WORKS</button>
         <button onclick="scrollToSection('contact')">CONTACTS</button>
     </div>
     <div id="home" class="section">
         <?php include('home.php'); ?>
     </div>
-    <div id="about" class="section">
+    <div id="works" class="section">
         <h1>Works</h1>
         <p>Learn more About us here.</p>
     </div>
