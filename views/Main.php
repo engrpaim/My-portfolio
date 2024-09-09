@@ -23,7 +23,7 @@
     </div>
 
     <div id="home" class="section">
-        <?php include('views/home.php'); ?>
+        <?php include('views/home.html'); ?>
     </div>
 
     <div id="works" class="section">
