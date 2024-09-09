@@ -5,8 +5,14 @@ function scrollToSection(sectionId) {
     isBeingused()
     document.getElementById(sectionId).scrollIntoView({
         behavior: 'smooth'
+        
     });
-    isFunctionUsed = false;
+
+    setTimeout(() => {
+        isFunctionUsed = false;
+        console.log('After:', isFunctionUsed); // Outputs: After: false
+    }, 1000); 
+    
 }
 
 function getVisiblePercentage(element) {
@@ -22,18 +28,22 @@ function getVisiblePercentage(element) {
 }
 
 function handleScroll() {
+    if(isFunctionUsed == true)return;
     document.querySelectorAll('.section').forEach(section => {
 
         const visiblePercentage = getVisiblePercentage(section);
         console.log(`${section.id} is ${visiblePercentage.toFixed(2)}% visible.`);
-        if(isFunctionUsed == true)return;
-        if(visiblePercentage.toFixed(2) > 25 && visiblePercentage.toFixed(2) <55){
+        /*if(visiblePercentage.toFixed(2) > 25 && visiblePercentage.toFixed(2) <65){
 
             document.getElementById(section.id).scrollIntoView({
                 behavior: 'auto'
-            });
+            }); 
+            
+   
 
-        }
+         
+
+        }*/
 
     });
 }
@@ -46,5 +56,10 @@ if(isFunctionUsed == false){
     console.log('no');
 }else{
     console.log('yes');
+    
 }
+
+
+
 }
+

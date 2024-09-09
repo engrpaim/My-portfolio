@@ -37,7 +37,8 @@ body {
 
 .navbar button {
   background-color: transparent;
-  color: black;
+  color: #212121;
+  font-weight: bold;
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
@@ -45,7 +46,7 @@ body {
 }
 
 .navbar button:hover {
-  color: #305f7d;
+  color: #607d8b;
 }
 
 #homeContainer {
