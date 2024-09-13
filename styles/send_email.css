@@ -1,0 +1,43 @@
+.send-email {
+  display: flex;
+  flex-direction: column;
+  /* Stacks child elements vertically */
+  justify-content: center;
+  /* Centers items vertically within this div */
+  align-items: center;
+  /* Centers items horizontally within this div */
+  width: 100%;
+  max-width: 60vh;
+  /* Adjust width if necessary */
+}
+
+label {
+  width: 100%;
+  max-width: 60vh;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#message {
+  width: 100%;
+  max-width: 60vh;
+  height: 60px;
+  padding: 1.2vh;
+  border: 2px solid #607d8b;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#visitorName {
+  font-size: 1rem;
+  width: 100%;
+  max-width: 60vh;
+  border: 0.15rem solid #607d8b;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+
+#action {
+  background-color: blue;
+}

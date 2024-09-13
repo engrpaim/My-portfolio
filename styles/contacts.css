@@ -1,0 +1,59 @@
+.logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1vh;
+  outline: none;
+}
+
+svg {
+  width: 10rem;
+  height: 10rem;
+  transition: fill 0.3s ease;
+  padding: 2vh;
+}
+
+#discord {
+  fill: #ff5733;
+  transition: fill 0.3s ease;
+}
+
+button:hover svg path {
+  fill: #ff5733;
+}
+
+#remain-white {
+  fill: #fff;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30vh;
+}
+
+.workTogether {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#LGlinked {
+  margin-bottom: 1.5vh;
+  padding-left: 1.2vh;
+}
+
+#action {
+  background-color: blue;
+  color: white;
+  padding: 1.5vh 3.2vh;
+  border: none;
+  cursor: pointer;
+  padding: 1.5vh 2vh;
+  font-weight: 900;
+}
+
+#action:hover {
+  background-color: darkblue;
+}

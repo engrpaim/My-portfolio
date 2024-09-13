@@ -16,6 +16,7 @@
 <body>
 
     <div class="navbar">
+
         <button onclick="scrollToSection('home')">HOME</button>
         <button onclick="scrollToSection('works')">WORKS</button>
         <button onclick="scrollToSection('contact')">CONTACTS</button>
@@ -23,7 +24,12 @@
     </div>
 
     <div id="home" class="section">
-        <?php include('views/home.html'); ?>
+        <?php
+
+        include('views/home.html');
+        echo "<script>document.querySelector('#action').style.display='block';</script>";
+
+        ?>
     </div>
 
     <div id="works" class="section">
@@ -32,11 +38,11 @@
     </div>
 
     <div id="contact" class="section">
-        <h1>Contacts</h1>
-        <p>Get in touch through the Contact section.</p>
+        <?php include('views/Contacts.php') ?>
     </div>
 
     <script src="./js/animations.js"></script>
+
 
 </body>
 

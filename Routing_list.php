@@ -16,8 +16,8 @@ $router->addRoute('404', function () {
 });
 
 
-$requestedRoute = isset($_GET['route']) ? $_GET['route'] : 'home';
-
+$requestedRoute = isset($_GET['route']) ? $_GET['route'] : 'portfolio';
+var_dump($requestedRoute);
 
 $router->dispatch($requestedRoute);
 var_dump($router);

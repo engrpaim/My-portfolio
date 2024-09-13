@@ -28,25 +28,20 @@ function getVisiblePercentage(element) {
 }
 
 function handleScroll() {
+    
+    var contact = false;
+    var upwardContact = false;
     if(isFunctionUsed == true)return;
     document.querySelectorAll('.section').forEach(section => {
 
         const visiblePercentage = getVisiblePercentage(section);
         console.log(`${section.id} is ${visiblePercentage.toFixed(2)}% visible.`);
-        /*if(visiblePercentage.toFixed(2) > 25 && visiblePercentage.toFixed(2) <65){
-
-            document.getElementById(section.id).scrollIntoView({
-                behavior: 'auto'
-            }); 
-            
    
-
-         
-
-        }*/
-
+        
+        
     });
 }
+
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll); 
 handleScroll();

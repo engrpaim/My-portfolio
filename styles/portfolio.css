@@ -20,7 +20,7 @@ body {
 }
 
 #contact {
-  background-color: #dee2e6;
+  background-color: #f8f9f9;
   padding-top: 5vh;
 }
 
@@ -60,6 +60,9 @@ body {
   margin: 0;
   font-size: 2em;
 }
+
+//CONTACTS
+
 //TOSAVE
 // HIDE SCROLL GUIDE
 ::-webkit-scrollbar {
