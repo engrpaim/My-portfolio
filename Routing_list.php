@@ -17,7 +17,8 @@ $router->addRoute('404', function () {
 
 
 $requestedRoute = isset($_GET['route']) ? $_GET['route'] : 'portfolio';
-var_dump($requestedRoute);
 
+$recognizedPages = array("portfolio");
+
+in_array($requestedRoute, $recognizedPages) or $_GET['route'] == '' ? $_GET['route'] : include 'views/404.php';
 $router->dispatch($requestedRoute);
-var_dump($router);

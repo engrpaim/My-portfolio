@@ -33,8 +33,9 @@
     </div>
 
     <div id="works" class="section">
-        <h1>Works</h1>
-        <p>Learn more About us here.</p>
+        <?php
+        include('views/works.php');
+        ?>
     </div>
 
     <div id="contact" class="section">

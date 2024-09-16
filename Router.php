@@ -13,7 +13,7 @@ class Router
         if (array_key_exists($requestedRoute, $this->routes)) {
             call_user_func($this->routes[$requestedRoute]);
         } else {
-            $this->routes['404']();
+            //$this->routes['404']();
         }
     }
 }

@@ -52,8 +52,34 @@ button:hover svg path {
   cursor: pointer;
   padding: 1.5vh 2vh;
   font-weight: 900;
+  border-radius: 0.5vh;
 }
 
 #action:hover {
   background-color: darkblue;
+}
+
+@media (max-width: 800px) {
+  svg {
+    width: 7rem;
+    height: 7rem;
+    padding: 1.5vh;
+  }
+
+  #action {
+    padding: 1vh 1.5vh;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  svg {
+    width: 5rem;
+    height: 5rem;
+    padding: 1vh;
+  }
+
+  #action {
+    padding: 0.5vh 1vh;
+  }
 }

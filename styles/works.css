@@ -1,0 +1,177 @@
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+  padding-left: 3.5rem;
+  padding-top: 0rem;
+}
+
+.card {
+  display: flex;
+  margin: 2rem;
+  background: #f0b27a;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid #8a8d8f;
+  width: 16rem;
+  min-width: 16rem;
+  max-width: 25rem;
+  height: 25rem;
+  cursor: pointer;
+}
+.work-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+  width: 13rem;
+  height: 15rem;
+  border: solid #e0e0e0;
+}
+.card:hover {
+  background: none;
+}
+
+.title {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.pagination button svg {
+  width: 4rem;
+  height: 4rem;
+  transition: fill 0.3s ease;
+}
+.next {
+  cursor: pointer;
+  background: none;
+  border: none;
+  fill: #f0b27a;
+}
+
+.next:hover svg path {
+  fill: #f8553d;
+}
+.prev {
+  background: none;
+  border: none;
+  cursor: pointer;
+  fill: #f0b27a;
+}
+
+.prev:hover svg path {
+  fill: #f8553d;
+}
+@media (max-width: 1900px) {
+  .title {
+    margin-top: 5rem;
+  }
+  .card {
+    margin-top: 5rem;
+    display: grid;
+    width: 14rem;
+    min-width: 14rem;
+    height: 21rem;
+    font-size: 1rem;
+  }
+
+  .work-picture {
+    margin-left: 0.1rem;
+    width: 13.5rem;
+    height: 12rem;
+  }
+
+  .pagination {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 1800px) {
+  .title {
+    margin-top: 2rem;
+  }
+  .card {
+    margin-top: 2rem;
+    display: grid;
+    width: 11rem;
+    min-width: 10rem;
+    height: 17rem;
+    font-size: 0.8rem;
+  }
+
+  .work-picture {
+    margin-top: 2rem;
+    margin-left: 0.1rem;
+    width: 10.5rem;
+    height: 8rem;
+  }
+}
+@media (max-width: 1501px) {
+  .title {
+    margin-top: 10rem;
+  }
+  .card {
+    margin-top: 5rem;
+    display: grid;
+    width: 9rem;
+    min-width: 10rem;
+    height: 15rem;
+    font-size: 0.8rem;
+  }
+
+  .work-picture {
+    margin-left: 0.1rem;
+    width: 9.5rem;
+    height: 8rem;
+  }
+  .pagination {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .title {
+    margin-top: 2rem;
+  }
+  .card {
+    margin-top: 2rem;
+    display: grid;
+    width: 10rem;
+    min-width: 10rem;
+    height: 15rem;
+    font-size: 0.8rem;
+  }
+
+  .work-picture {
+    margin-top: 2rem;
+    margin-left: 0.1rem;
+    width: 9.5rem;
+    height: 8rem;
+  }
+  .pagination {
+    margin-top: 2rem;
+    margin-top: 0;
+  }
+  .pagination button svg {
+    width: 2rem;
+    height: 2rem;
+    transition: fill 0.3s ease;
+  }
+}
