@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/works.css">
+<div></div>
 <div class="title">
     <h1>WORKS</h1>
 </div>
@@ -94,7 +95,7 @@
             const nextButton = document.querySelector('.next');
 
             function handleResize() {
-                const isMobile = window.innerWidth <= 935;
+                const isMobile = window.innerWidth <= 1300;
                 const numPages = Math.ceil(cards.length / (isMobile ? cardsPerPageMobile : cardsPerPageDesktop));
 
                 prevButton.addEventListener('click', () => {
